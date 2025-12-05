@@ -5,7 +5,7 @@ import UploadPanel from "./components/UploadPanel.jsx";
 import AnalysisResult from "./components/AnalysisResult.jsx";
 import AutoFixPanel from "./components/AutoFixPanel.jsx";
 
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:5000";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 function App() {
   const [creativeFile, setCreativeFile] = useState(null);
