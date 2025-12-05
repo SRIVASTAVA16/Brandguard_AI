@@ -3,7 +3,7 @@ const cors = require("cors");
 const multer = require("multer");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -95,5 +95,5 @@ app.get("/api/guidelines", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`BrandGuard AI Backend running at http://localhost:${PORT}`);
+    console.log(`BrandGuard AI Backend running on port ${PORT}`);
 });
